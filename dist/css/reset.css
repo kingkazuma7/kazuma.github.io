@@ -1,0 +1,102 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 20100917
+Author: Richard Clark  http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    fontsize:100%;
+    verticalalign:baseline;
+    background:transparent;
+}
+
+body {
+    lineheight:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    liststyle:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    fontsize:100%;
+    verticalalign:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    backgroundcolor:#ff9;
+    color:#000;
+    textdecoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    backgroundcolor:#ff9;
+    color:#000;
+    fontstyle:italic;
+    fontweight:bold;
+}
+
+del {
+    textdecoration: linethrough;
+}
+
+abbr[title], dfn[title] {
+    borderbottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    bordercollapse:collapse;
+    borderspacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    bordertop:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    verticalalign:middle;
+}
