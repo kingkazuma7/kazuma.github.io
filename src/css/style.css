@@ -90,7 +90,7 @@ body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hirag
 
 .servicewrap__box.animate li.moving { opacity: 1; top: 0; }
 
-.servicewrap__box.animate li:first-child { transition: all 1s; }
+.servicewrap__box.animate li:first-of-type { transition: all 1s; }
 
 .servicewrap__box.animate li:nth-child(2n) { transition: all 2s; }
 
