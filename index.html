@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf8" />
     <meta httpequiv="XUACompatible" content="IE=edge" />
-    <meta name="viewport" content="width=devicewidth,initialscale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>ページタイトル</title>
     <meta name="description" content="ページの説明文" />
     <link rel="icon" href="./favicon.ico" />
@@ -12,8 +12,8 @@
       sizes="180×180"
       href="./appletouchicon180×180.png"
     />
-    <link rel="stylesheet" href="./dist/css/reset.css" />
-    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Comic+Neue|Raleway:500&display=swap"
       rel="stylesheet"
@@ -22,20 +22,15 @@
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
-    <! css >
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssresetmin.css"
-    />
-    <! jquery >
-    <! http://vodkabears.github.io/remodal/# >
-    <link rel="stylesheet" href="./dist/css/remodal.css" />
-    <link rel="stylesheet" href="./dist/css/remodaldefaulttheme.css" />
+    <!-- css -->
+    <!-- jquery -->
+    <!-- http://vodkabears.github.io/remodal/# -->
+    <link rel="stylesheet" href="./src/css/remodal.css" />
+    <link rel="stylesheet" href="./src/css/remodal-default-theme.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./dist/js/remodal.min.js"></script>
+    <script src="./src/js/remodal.min.js"></script>
     <script src="./src/js/index.js"></script>
-    <! ogp >
+    <!-- ogp -->
     <meta property="og:url" content="ページURL" />
     <meta property="og:title" content="ページタイトル" />
     <meta property="og:type" content="ページタイプ" />
@@ -43,23 +38,23 @@
     <meta property="og:image" content="画像URL" />
     <meta property="og:site_name" content="サイト名" />
     <meta property="og:local" content="ja_JP" />
-    <! twitter card >
+    <!-- twitter card -->
     <meta name="twitter:card" content="カード種類" />
     <meta name="twitter:site" content="@Twitterユーザ名" />
   </head>
   <body>
     <header class="header">
-      <h1 class="pagettl">
-        <span class="txtprimary">T</span>akanashi
-        <span class="txtprimary">K</span>azuma
+      <h1 class="page-ttl">
+        <span class="txt-primary">T</span>akanashi
+        <span class="txt-primary">K</span>azuma
       </h1>
-      <! <p class="sublead">コーディング業務</p> >
+      <!-- <p class="sublead">コーディング業務</p> -->
     </header>
     <main class="main">
-      <! About >
+      <!-- About -->
       <section class="block block01">
         <div class="inner">
-          <h2 class="blockttl mg">About</h2>
+          <h2 class="block-ttl -mg">About</h2>
           <div class="profbox animate">
             <figure class="profimg">
               <img src="./src/img/profile.jpg" alt="顔写真" />
@@ -81,28 +76,28 @@
         </div>
       </section>
 
-      <! Service >
+      <!-- Service -->
       <section class="block block02">
         <div class="inner">
-          <h2 class="blockttl mg">Services</h2>
+          <h2 class="block-ttl -mg">Services</h2>
           <div class="servicewrap">
             <ul class="servicewrap__box animate">
               <li>
-                <i class="fas facode fwicon"></i>
+                <i class="fas fa-code fwicon"></i>
                 <h3 class="servicettl">コーディング</h3>
                 <p>
                   お預かりしたphotoshop、XDなどのデザインデータをHTML/CSS/jQueryを用いて適切にコーディングいたします。レスポンシブにも対応。
                 </p>
               </li>
               <li>
-                <i class="fas fadesktop fwicon"></i>
+                <i class="fas fa-desktop fwicon"></i>
                 <h3 class="servicettl">LP制作</h3>
                 <p>
                   お客様のご要望をヒヤリングした上でレスポンシブ対応のLP（ランディングページ）を制作いたします。1ページのLP作成をメインとしております。
                 </p>
               </li>
               <li>
-                <i class="fab fawordpresssimple fwicon"></i>
+                <i class="fab fa-wordpress-simple fwicon"></i>
                 <h3 class="servicettl">WordPress</h3>
                 <p>
                   お預かりしたphotoshop、XDなどのデザインデータを元にWordPressでサイトを構築します。
@@ -113,22 +108,26 @@
         </div>
       </section>
 
-      <! Works >
+      <!-- Works -->
       <section class="block block03">
         <div class="inner">
-          <h2 class="blockttl mg">Works</h2>
+          <h2 class="block-ttl -mg">Works</h2>
+
+          <!-- **
+          https://00m.in/gTnhQ
+          ** -->
           <ul class="worksbox animate">
             <li>
               <a href="#modal_c" class="capture"
                 ><img src="./src/img/top/ala_thum.jpg" alt=""
               /></a>
-              <div class="remodal" dataremodalid="modal_c">
+              <div class="remodal" data-remodal-id="modal_c">
                 <a
                   href="https://drive.google.com/drive/u/1/folders/178AVqBGH18MeshoORncCXZWfGBkvhQST"
                 >
                   <img src="./src/img/works/ala.ac_pc.png" alt=""
                 /></a>
-                <button dataremodalaction="cancel" class="remodalcancel">
+                <button data-remodal-action="cancel" class="remodal-cancel">
                   閉じる
                 </button>
               </div>
@@ -137,13 +136,13 @@
               <a href="#modal_d" class="capture"
                 ><img src="./src/img/top/nakano_thum.jpg" alt=""
               /></a>
-              <div class="remodal" dataremodalid="modal_d">
+              <div class="remodal" data-remodal-id="modal_d">
                 <a
                   href="https://drive.google.com/drive/u/1/folders/11MEaKrYTXAIwx0F0a4bD0BbUeSOb5lB"
                 >
                   <img src="./src/img/works/nakano_pc.png" alt="" />
                 </a>
-                <button dataremodalaction="cancel" class="remodalcancel">
+                <button data-remodal-action="cancel" class="remodal-cancel">
                   閉じる
                 </button>
               </div>
@@ -152,13 +151,13 @@
               <a href="#modal_e" class="capture"
                 ><img src="./src/img/top/piquant_thum.jpg" alt=""
               /></a>
-              <div class="remodal" dataremodalid="modal_e">
+              <div class="remodal" data-remodal-id="modal_e">
                 <a
                   href="https://drive.google.com/drive/u/1/folders/1JnITjkvNJHv1cBUPCh0BMbU_nBxwa95"
                 >
                   <img src="./src/img/works/about_pc.png" alt="" />
                 </a>
-                <button dataremodalaction="cancel" class="remodalcancel">
+                <button data-remodal-action="cancel" class="remodal-cancel">
                   閉じる
                 </button>
               </div>
@@ -167,13 +166,13 @@
               <a href="#modal_f" class="capture"
                 ><img src="./src/img/top/five_thum.jpg" alt=""
               /></a>
-              <div class="remodal" dataremodalid="modal_f">
+              <div class="remodal" data-remodal-id="modal_f">
                 <a
                   href="https://drive.google.com/drive/u/1/folders/1prprulmHRc1e2l4WSrsl2TKHsCdBRHA"
                 >
                   <img src="./src/img/works/fivestar_pc.png" alt="" />
                 </a>
-                <button dataremodalaction="cancel" class="remodalcancel">
+                <button data-remodal-action="cancel" class="remodal-cancel">
                   閉じる
                 </button>
               </div>
@@ -182,13 +181,13 @@
               <a href="#modal_g" class="capture"
                 ><img src="./src/img/top/soshisha_thum.jpg" alt=""
               /></a>
-              <div class="remodal" dataremodalid="modal_g">
+              <div class="remodal" data-remodal-id="modal_g">
                 <a
                   href="https://drive.google.com/drive/u/1/folders/1Oc58EjPXVHzBxuDQd5Rv4sou6eGuQjs"
                 >
                   <img src="./src/img/works/soshisha_pc.png" alt="" />
                 </a>
-                <button dataremodalaction="cancel" class="remodalcancel">
+                <button data-remodal-action="cancel" class="remodal-cancel">
                   閉じる
                 </button>
               </div>
@@ -197,21 +196,21 @@
         </div>
       </section>
 
-      <! Contact >
+      <!-- Contact -->
       <section class="block block04">
         <div class="inner">
-          <h2 class="blockttl mg">Contact</h2>
+          <h2 class="block-ttl -mg">Contact</h2>
           <p class="mailtext">メールよりお気軽にお問い合わせください。</p>
           <p class="mailicon">
             <a href="mailto:takanashikazuma.job@gmail.com"
-              ><i class="far faenvelope fwicon"></i
+              ><i class="far fa-envelope fwicon"></i
             ></a>
           </p>
         </div>
       </section>
     </main>
 
-    <! footer >
+    <!-- footer -->
     <footer><p>© 2020 Kazuma Takanashi</p></footer>
   </body>
 </html>

@@ -1,13 +1,10 @@
-@charset "utf8";
-
-$breakpointsp: "screen and (maxwidth: 768px)";
-$breakpointpc: "screen and (minwidth: 769px)";
+$breakpoint-sp: "screen and (max-width: 768px)";
+$breakpoint-pc: "screen and (min-width: 769px)";
 // $maincolor: #123552;
-$maincolor: #CCD269;
-$darkcolor: #787E15;
-$thincolor: #F7FCA8;
-$textcolor: #707070;
-
+$main-color: #ccd269;
+$dark-color: #787e15;
+$thin-color: #f7fca8;
+$text-color: #707070;
 
 @mixin clearfix {
   &::after {
@@ -19,12 +16,12 @@ $textcolor: #707070;
 }
 
 @mixin roboto {
-  fontfamily: 'Roboto', sansserif;
+  font-family: "Roboto", sans-serif;
 }
 
 @mixin flex {
   display: flex;
-  alignitems: center;
+  align-items: center;
 }
 
 @mixin absolutecenter {
@@ -36,11 +33,11 @@ $textcolor: #707070;
   position: absolute;
 }
 
-@mixin objectfitcover {
+@mixin object-fitcover {
   width: 100%;
   height: 100%;
-  objectfit: cover;
-  fontfamily: 'objectfit: cover';
+  object-fit: cover;
+  font-family: "object-fit: cover";
 }
 
 @mixin rem($size) {
@@ -49,7 +46,7 @@ $textcolor: #707070;
 }
 
 @function vw($size) {
-  @return (($size / 750) * 100)+vw;
+  @return (($size / 750) * 100) + vw;
 }
 
 @mixin arrow($size, $weight, $color, $deg) {
@@ -57,59 +54,55 @@ $textcolor: #707070;
   display: inlineblock;
 
   @if $color==auto {
-    bordertop: $weight solid;
-    borderright: $weight solid;
-  }
-
-  @else {
-    bordertop: $weight solid $color;
-    borderright: $weight solid $color;
+    border-top: $weight solid;
+    border-right: $weight solid;
+  } @else {
+    border-top: $weight solid $color;
+    border-right: $weight solid $color;
   }
 
   width: $size;
   height: $size;
-  webkittransform: rotate($deg  45deg);
-  transform: rotate($deg  45deg);
+  transform: rotate($deg 45deg);
 }
 
-@mixin lineheight($value) {
+@mixin line-height($value) {
   height: $value;
-  lineheight: $value;
+  line-height: $value;
 }
 
-@mixin letterspacing($value) {
-  letterspacing: ($value / 1000) + em;
+@mixin letter-spacing($value) {
+  letter-spacing: ($value / 1000) + em;
 }
 
-@mixin siteanime($beforetime: .8s, $aftertime: .5s) {
+@mixin siteanime($beforetime: 0.8s, $aftertime: 0.5s) {
   &:after {
     content: "";
     width: 100%;
     height: 100%;
-    backgroundcolor: #eee;
+    background-color: #eee;
     position: absolute;
     right: 0;
     top: 0;
-    transition: width .85s cubicbezier(0.68, 0.55, 0.265, 1.55);
-    transitiondelay: $aftertime;
-    zindex: 3;
+    transition: width 0.85s cubicbezier(0.68, 0.55, 0.265, 1.55);
+    transition-delay: $aftertime;
+    z-index: 3;
   }
 
   &:before {
     content: "";
     width: 100%;
     height: 100%;
-    backgroundcolor: #c3c3c3;
+    background-color: #c3c3c3;
     position: absolute;
     right: 0;
     top: 0;
-    transition: width .85s cubicbezier(0.68, 0.55, 0.265, 1.55);
-    transitiondelay: $beforetime;
-    zindex: 3;
+    transition: width 0.85s cubicbezier(0.68, 0.55, 0.265, 1.55);
+    transition-delay: $beforetime;
+    z-index: 3;
   }
 
   &.isshow {
-
     &:after,
     &:before {
       width: 0;

@@ -1,14 +1,8 @@
 {
-  "name": "aa",
+  "name": "src",
   "version": "1.0.0",
   "description": "",
-  "browserslist": [
-    "last 2 versions",
-    "ie >= 11",
-    "Android >= 4",
-    "ios_saf >= 8"
-  ],
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,26 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "browsersync": "^2.26.7",
-    "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulpcleancss": "^4.3.0",
-    "gulpconcat": "^2.6.1",
-    "gulpejs": "^5.1.0",
-    "gulphtmlmin": "^5.0.1",
-    "gulpimagemin": "^7.1.0",
-    "gulpmode": "^1.0.2",
-    "gulpnotify": "^3.2.0",
-    "gulporder": "^1.2.0",
-    "gulpplumber": "^1.2.1",
-    "gulppostcss": "^8.0.0",
-    "gulprename": "^2.0.0",
-    "gulpreplace": "^1.0.0",
-    "gulpsass": "^4.0.2",
-    "gulpsassglob": "^1.1.0",
-    "gulpuglify": "^3.0.2",
-    "imageminmozjpeg": "^8.0.0",
-    "imageminpngquant": "^8.0.0"
+    "gulp-sass": "^4.0.2"
   }
 }
