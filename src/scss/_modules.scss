@@ -5,6 +5,7 @@ $main-color: #ccd269;
 $dark-color: #787e15;
 $thin-color: #f7fca8;
 $text-color: #707070;
+$link-color: #0066c0;
 
 @mixin clearfix {
   &::after {
@@ -46,7 +47,7 @@ $text-color: #707070;
 }
 
 @function vw($size) {
-  @return (($size / 750) * 100) + vw;
+  @return (($size / 750) * 100)+vw;
 }
 
 @mixin arrow($size, $weight, $color, $deg) {
@@ -56,7 +57,9 @@ $text-color: #707070;
   @if $color==auto {
     border-top: $weight solid;
     border-right: $weight solid;
-  } @else {
+  }
+
+  @else {
     border-top: $weight solid $color;
     border-right: $weight solid $color;
   }
@@ -103,6 +106,7 @@ $text-color: #707070;
   }
 
   &.isshow {
+
     &:after,
     &:before {
       width: 0;

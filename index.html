@@ -48,13 +48,37 @@
         <span class="txt-primary">T</span>akanashi
         <span class="txt-primary">K</span>azuma
       </h1>
-      <!-- <p class="sublead">コーディング業務</p> -->
+
+      <!-- 
+        https://125naroom.com/web/2958
+        hum menu
+      -->
+      <div id="navArea" class="spelement">
+        <nav class="nav">
+          <div class="inner">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="mask"></div>
+      </div>
     </header>
     <main class="main">
       <!-- About -->
       <section class="block block01">
         <div class="inner">
-          <h2 class="block-ttl -mg">About</h2>
+          <h2 class="block-ttl -mg" id="about">About</h2>
           <div class="profbox animate">
             <figure class="profimg">
               <img src="./src/img/profile.jpg" alt="顔写真" />
@@ -80,7 +104,7 @@
       <!-- Service -->
       <section class="block block02">
         <div class="inner">
-          <h2 class="block-ttl -mg">Services</h2>
+          <h2 class="block-ttl -mg" id="services">Services</h2>
           <div class="servicewrap">
             <ul class="servicewrap__box animate">
               <li>
@@ -112,7 +136,7 @@
       <!-- Works -->
       <section class="block block03">
         <div class="inner">
-          <h2 class="block-ttl -mg">Works</h2>
+          <h2 class="block-ttl -mg" id="works">Works</h2>
 
           <!-- **
           https://00m.in/gTnhQ
@@ -200,7 +224,7 @@
       <!-- Contact -->
       <section class="block block04">
         <div class="inner">
-          <h2 class="block-ttl -mg">Contact</h2>
+          <h2 class="block-ttl -mg" id="contact">Contact</h2>
           <p class="mailtext">メールよりお気軽にお問い合わせください。</p>
           <p class="mailicon">
             <a href="mailto:takanashikazuma.job@gmail.com"
