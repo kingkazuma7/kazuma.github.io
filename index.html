@@ -10,7 +10,6 @@
   <link rel="appletouchicon" sizes="180×180" href="./appletouchicon180×180.png" />
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Raleway:500&display=swap" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
   <!-- css -->
@@ -19,11 +18,8 @@
   <link rel="stylesheet" href="./src/css/remodal.css" />
   <link rel="stylesheet" href="./src/css/remodal-default-theme.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.js"></script>
-  <script src="./src/js/index.js"></script>
   <script src="./src/js/remodal.min.js"></script>
-  <script src="./src/js/jquery.validate.js"></script>
-
+  <script src="./src/js/index.js"></script>
   <!-- ogp -->
   <meta property="og:url" content="ページURL" />
   <meta property="og:title" content="ページタイトル" />
@@ -35,19 +31,6 @@
   <!-- twitter card -->
   <meta name="twitter:card" content="カード種類" />
   <meta name="twitter:site" content="@Twitterユーザ名" />
-
-  <script>
-    // just for the demos, avoids form submit
-    jQuery.validator.setDefaults({
-      debug: true,
-      success: "valid",
-    });
-    var form = $("#myform");
-    form.validate();
-    $("button").click(function () {
-      alert("Valid: " + form.valid());
-    });
-  </script>
 </head>
 <body>
   <header class="header">
@@ -211,46 +194,12 @@
     <section class="block block04">
       <div class="inner">
         <h2 class="block-ttl -mg" id="contact">Contact</h2>
-        <div>
-          <form id="testForm" method="post">
-          </form>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <form action="https://api.staticforms.xyz/submit" method="post" id="myform">
-                <input type="hidden" name="accessKey" value="2d8512fc-a516-4140-a2b5-43cce1eafb4c" />
-                <input type="hidden" name="subject" value="件名" />
-                <input type="hidden" name="redirectTo" value="https://www.google.com/?hl=ja" />
-                <div class="form-group row">
-                  <label for="inputName" class="col-sm-4 col-form-label">お名前</label>
-                  <div class="col-sm-8">
-                    <input type="text" name="name" class="form-control" id="inputName" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputEmail" class="col-sm-4 col-form-label">メールアドレス</label>
-                  <div class="col-sm-8">
-                    <input type="text" name="email" class="form-control" id="inputEmail" />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputTextarea" class="col-sm-4 col-form-label">メッセージ</label>
-                  <div class="col-sm-8">
-                    <textarea name="message" rows="3" class="form-control" id="inputTextarea"></textarea>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary mb-2">
-                    送信
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
+        <p class="mailtext">メールよりお気軽にお問い合わせください。</p>
+        <p class="mailicon">
+            <a href="mailto:takanashikazuma.job@gmail.com"
+              ><i class="far fa-envelope fwicon"></i
+            ></a>
+          </p>
       </div>
     </section>
   </main>
@@ -259,63 +208,5 @@
   <footer>
     <p>© 2020 Kazuma Takanashi</p>
   </footer>
-
-  <script>
-    $("#testForm").validate({
-      rules: {
-        name: {
-          required: true,
-          rangelength: [1, 50],
-        },
-        biko: {
-          required: function () {
-            return $("#age").val() >= 20;
-          },
-        },
-      },
-      messages: {
-        name: {
-          required: "名前を入力してください",
-          minlength: "名前は3文字以上入力してください",
-        },
-        biko: {
-          required: "備考を入力してください",
-        },
-      },
-    });
-
-    $("#age").blur(function () {
-      $("#testForm").valid();
-    });
-
-    $("#myform").validate({
-      // rules: {
-      //   name: {
-      //     required: "*お名前を入力してください", // 入力必須チェック
-      //     rangelength: [1, 50], // 最小１文字、最大５０文字
-      //   },
-      //   email: {
-      //     required: "*メールアドレスを入力してください", // 入力必須チェック
-      //     email: "*正しいメールアドレス形式で入力してください", // メールアドレス形式チェック
-      //   },
-      //   message: {
-      //     required: "*メッセージを入力してください", // 入力必須チェック
-      //   },
-      // },
-
-      rules: {
-        name: {
-          required: true,
-          rangelength: [1, 50],
-        },
-        message: {
-          name: {
-            required: "名前を入力してください",
-            minlength: "名前は3文字以上入力してください",
-          },
-        },
-      },
-    });
-  </script>
 </body>
 </html>
